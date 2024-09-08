@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Texas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/texas.webp" style="width: 18%; height: auto;" alt="Texas Map">
+        <h1>Welcome to Texas</h1>
+    </header>
+    <nav class="navigation-bar">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="capital.html">Austin</a>
+            <a href="houston.html">Houston</a>
+            <a href="sanantonio.html">San Antonio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <!-- //nav -->
+    <script>
+        function toggleMenu()
+        {
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.classList.contains("show"))
+            {
+                navLinks.classList.remove("show");
+            } else
+            {
+                navLinks.classList.add("show");
+            }
+        }
+    </script>
+    <!-- here is going to be the side for the social media this is going to be diffrent cause of the form format  -->
+    <main class="content-container">
+        <aside class="soci">
+            <h2>Follow Us</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="assets/twitter.png" alt="Twitter" class="social-icon"> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/insta.png" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- the form -->
+        <!-- make sure they have placeholder -->
+        <div class="contact-form-container">
+            <h1>Contact Us</h1>
+            <form id="contactForm" action="validate" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmtheEmail" name="confirmtheEmail" placeholder="Confirm Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="message" rows="5"></textarea>
+
+                <p id="errorMessage" style="color: red; display: none;">Emails do not match.</p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+
+        <!-- writing a script to verfiies the emails would match on the fields -->
+
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (event)
+            {
+                // in here we are getting the values 
+                var email = document.getElementById("email").value;
+                //method to check 
+                var confirmEmail = document.getElementById("confirmtheEmail").value;
+                var errorMessage = document.getElementById("errorMessage");
+
+                //is statment (using the operator)
+                if (email !== confirmEmail)
+                {
+                    errorMessage.style.display = "block";
+                    event.preventDefault();
+                } else
+                {
+                    errorMessage.style.display = "none";
+                }
+            });
+        </script>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Welcome to Texas. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@welcometotexas.com">info@welcometotexas.com</a></p>
+    </footer>
+</body>
+
+</html>

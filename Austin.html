@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Texas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <img src="assets/texas.webp" style="width: 18%; height: auto;" alt="Texas Map">
+        <h1>Welcome to Texas</h1>
+    </header>
+    <!-- the navigation bar from all the other is going to look the same  -->
+    <nav class="navigation-bar">
+        <!-- the number is the representation of the hamburger icon  -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Austin.html">Austin</a>
+            <a href="houston.html">Houston</a>
+            <a href="sanantonio.html">San Antonio</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </nav>
+    <!-- in here i am going to def the toggling for the navigation and the menu -->
+    <script>
+        function toggleMenu()
+        {
+            // get the element with the ID navlinks 
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.classList.contains("show"))
+            {
+                navLinks.classList.remove("show");
+            } else
+            {
+                navLinks.classList.add("show");
+            }
+        }
+    </script>
+
+    <main>
+        <!-- aside for every social media on every page  -->
+        <aside class="social-media">
+            <h2>Follow Us</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="assets/twitter.png" alt="Twitter" class="social-icon"> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/insta.png" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+        <section>
+
+            <!--this is div is going to keep the about h and city information inside  -->
+            <div class="info">
+                <div class="houston">
+                    <div class="texas">
+                        <h1>Austin the state capital of Texas</h1>
+                        <img src="assets/capital.jpg" alt="Austin City" style="width: 70%; height: auto;">
+                        <div class="au">
+
+                        </div>
+                    </div>
+
+                    <div class="h">
+                        <h2>About Austin</h2>
+                    </div>
+                    <!-- making a list in here about austin -->
+                    <ul>
+                        <li>Austin’s population, nearing one million, reflects its status as a diverse and inclusive
+                            city.</li>
+                        <li>People from all walks of life come together to enjoy its unique cultural energy.</li>
+                        <li>From the bustling music venues on Sixth Street to the quiet, scenic beauty of the Hill
+                            Country.</li>
+                        <li>Austin is a city that seamlessly balances urban growth with the preservation of its natural
+                            and cultural heritage.</li>
+                    </ul>
+
+
+                </div>
+                <div class="austin">
+                    <h2>City Overview </h2>
+
+                </div>
+                <p>Austin is filled with historical sites like the Texas State Capitol and has many trails and parks to
+                    enjoy. What makes Austin unique is its mix of tradition and modern progress that the city is making.
+                    Austin started as a small village called Waterloo in the 1830s and was later renamed to honor
+                    Stephen F. Austin, an essential figure in Texas history. Today, Austin attracts creative people,
+                    entrepreneurs, and tech lovers for job opportunities, as well as its lively culture and excellent
+                    quality of life.</p>
+
+                <div class="region">
+                    Region and Classification
+                </div>
+                <p><strong>Austin is in the center of Texas, connecting the eastern and western parts of the state. It’s
+                        a busy city with a mix of homes, businesses, and places to relax. Because of where it’s located,
+                        Austin is an important cultural and economic spot in Texas. As the city grows, its urban
+                        landscape is changing. Austin is known for its lively and welcoming vibe, its walkable downtown
+                        and various food, music, and entertainment options.</p>
+
+                <div class="av">
+                    <h1>
+                        Average Income and Economy
+                    </h1>
+                </div>
+
+
+                <p><strong>Austin's average income reflects that it is a major tech center and one of the top places
+                        to
+                        live in the United States. In 2022, the median household income in Austin was around $110k.
+                        Austin's economy is driven by a strong tech industry, with big companies like Apple, Dell,
+                        and
+                        IBM having large operations there. Besides technology, Austin's economy benefits from its
+                        education sector, government jobs, and a booming entertainment and tourism industry. Despite
+                        Austin's fast growth, Austin remains more affordable than other major tech cities, making it
+                        appealing to professionals and families.
+                        <!-- source -->
+                    </strong></p>
+                <div class="button-container">
+                    <a href="https://data.austintexas.gov/stories/s/EOA-B-6-Median-Family-Income/r93e-edn2/#:~:text=Austin's%20median%20family%20income%20was,been%20primarily%20increasing%20over%20time."
+                        class="button" target="_blank">Source</a>
+                </div>
+                <div class="info">
+                    <h2>References and more information go here</h2>
+                    <div class="button-container">
+                        <a href="https://www.austintexas.gov/resident/about-city-austin" class="button"
+                            target="_blank">History</a>
+                        <a href="https://www.austintexas.org/music-scene/festivals/" class="button"
+                            target="_blank">Events</a>
+                        <a href="https://www.austintexas.gov/department/getting-around-austin" class="button"
+                            target="_blank">Transportation</a>
+                    </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Welcome to Texas. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@welcometotexas.com">info@welcometotexas.com</a></p>
+    </footer>
+</body>
+
+</html>

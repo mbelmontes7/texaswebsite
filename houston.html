@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Texas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <img src="assets/texas.webp" style="width: 18%; height: auto;" alt="Texas Map">
+        <h1>Welcome to Texas</h1>
+    </header>
+    <!-- the navigation bar from all the other is going to look the same  -->
+    <nav class="navigation-bar">
+        <!-- the number is the representation of the hamburger icon  -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Austin.html">Austin</a>
+            <a href="houston.html">Houston</a>
+            <a href="sanantonio.html">San Antonio</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </nav>
+    <!-- in here i am going to def the toggling for the navigation and the menu -->
+    <script>
+        function toggleMenu()
+        {
+            // get the element with the ID navlinks 
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.classList.contains("show"))
+            {
+                navLinks.classList.remove("show");
+            } else
+            {
+                navLinks.classList.add("show");
+            }
+        }
+    </script>
+
+    <main>
+        <!-- aside for every social media on every page  -->
+        <aside class="social-media">
+            <h2>Follow Us</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="assets/twitter.png" alt="Twitter" class="social-icon"> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/insta.png" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+        <section>
+
+            <section>
+                <!--this is div is going to keep the about h and city information inside  -->
+                <div class="info">
+                    <div class="houston">
+                        <div class="texas">
+                            <h1>Explore Houston - The Space City 🚀</h1>
+                            <img src="assets/hou.jpg" alt="Austin City" style="width: 70%; height: auto;">
+                            <!-- Houston main thing -->
+                            <div class="au">
+
+                            </div>
+                        </div>
+                        <!-- About houston stuff goes here-->
+                        <div class="h">
+                            <h2>About Houston</h2>
+                        </div>
+                        <ul>
+                            <li>Houston, with a population of approximately 2.3 million as of 2022, is a vibrant,
+                                multicultural city known for the city diversity.</li>
+                            <li>Houston It is a global city with cultural, medicine, and research strengths.</li>
+                            <li>Houston's economy is primarily based on energy, manufacturing, aeronautics, and
+                                transportation.</li>
+                            <li>Houston has become an ttractive place for businesses and families for the low-cost of
+                                living.</li>
+                        </ul>
+
+                        <div class="austin">
+                            <h2>City Overview </h2>
+
+                        </div>
+                        <p><strong>
+                                One of the growing cities, Houston, is the fourth-largest in the U.S. Over 140 languages
+                                are spoken in Houston. It is also located in Southeast Texas near the Gulf of Mexico.
+                                Founded in 1836, Houston was named after General Sam Houston, who guaranteed Texas
+                                independence by winning the Battle of San Jacinto against Mexico. While Houston is known
+                                for its energy industry, especially oil and natural gas.
+
+
+                        </p>
+
+                        <div class="region">
+                            Region and Classification
+                            <!-- talking about houston -->
+                        </div>
+                        <p><strong>
+                                Houston is an entry point to the Gulf Coast and the larger Southwest. Houston is
+                                classified as an urban metropolis with a wide range of houses, shops, and industrial
+                                areas. Houston's comprehensive layout is set apart by various communities and has a very
+                                complex highway structure. The city could be more friendly and walkable in some parts,
+                                but it needs some improvement in others. Houston is combined with its multiple food
+                                options and vibrant arts scene, it contributes to Houston's dynamic and cosmopolitan
+                                vibe. What makes it a great place to visit!
+                            </strong>
+                        </p>
+                        <div class="av">
+                            <h1>
+                                Average Income and Economy
+                            </h1>
+                        </div>
+                        <!-- Houston income information -->
+                        <p><strong>
+                                Houston's average income shows the city's status as an enormous growing center for its
+                                people. As of 2022, the city's median household income was almos $70K. This income
+                                shows the city's wide economic landscape and it also ncludes strong industries including
+                                energy,
+                                medical services, manufacturing, and aerospace. Regardless of income
+                                level, Houston's relatively affordable rate of living makes it an appealing place for
+                                both businesses and people. The economy of the region is growing, fueled by a mix of
+                                local businesses, and international companies, and a growing entrepreneurial industry.
+                        </p>
+                        <!-- adding a source botton here (use the same css from the other ones)-->
+                        <div class="button-container">
+                            <a href="https://www.ziprecruiter.com/Salaries/National-Average-Salary-in-Houston,TX"
+                                class="button" target="_blank">Source</a>
+                        </div>
+
+                        <div class="info">
+                            <h2>References and more information go here</h2>
+                            <div class="button-container">
+                                <a href="https://www.houston.org/timeline" class="button" target="_blank">History</a>
+                                <a href="https://www.visithoustontexas.com/events/" class="button"
+                                    target="_blank">Events</a>
+                                <a href="https://gusto.com/resources/research/salary/tx/houston" class="button"
+                                    target="_blank">Transportation</a>
+                            </div>
+
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Welcome to Texas. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@welcometotexas.com">info@welcometotexas.com</a></p>
+    </footer>
+</body>
+
+</html>

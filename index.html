@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Texas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/texas.webp" alt="Texas State" style="width: 18%; height: auto;">
+        <h1>Welcome to Texas</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <!-- toggleMenu for the user to have access to the navigation links  -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Austin.html">Austin</a>
+            <a href="houston.html">Houston</a>
+            <a href="sanantonio.html">San Antonio</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </nav>
+
+    <script>
+        //in this togglemenu is creating to show the user a show or hide menu when they clicked on it and see 
+        function toggleMenu()
+        // <!-- getting the element on the id navlinks -->
+        {
+            var navLinks = document.getElementById("nav-links");
+
+            if (navLinks.classList.contains("show"))
+            {
+                navLinks.classList.remove("show");
+            } else
+            {
+                navLinks.classList.add("show");
+            }
+        }
+    </script>
+    <!-- side bar for the main page is going to be looking diffrent from the rest just for (more info) -->
+    <main>
+        <aside class="sidebar">
+            <img src="assets/texas.webp" alt="Texas Landscape" style="width: 80%; height:auto;">
+            <h2>Texas Horizons</h2>
+            <p>
+                The sunsets are beautiful in texas with beautiful sunsets and great places
+            </p>
+            <img src="assets/blue.jpg" alt="Bluebonnet Flower" style="width: 80%; height: auto;">
+            <p>Bluebonnet: The State Flower of Texas</p>
+            <p>The Texas State Flower, the Bluebonnet, was chosen in 1901 for many of factors that demonstrate the
+                importance of the plant</p>
+        </aside>
+
+        <section>
+            <div class="texas">
+                <h2>Texas</h2>
+                <p>
+                    Texas ranks as the second-largest state in the U.S. by both size and population, boasting more than
+                    30 million inhabitants as of 2022. The state has a diverse and rich history, influenced by its
+                    dynamic current state and its unique background as an independent republic.
+                </p>
+                <!-- texas cow here  -->
+                <img src="assets/cow.jpg" alt="Texas Cow" style="width: 40%; height: auto;">
+                <p>
+                    <strong>"Don't Mess with Texas!"</strong> "Don't Mess with Texas!" It's what it means to be an
+                    independent and proud spirit. Texas has traditional values that are still deeply rooted in Texas's
+                    contemporary way of life, impacting local festivals and community events. Texans are known for their
+                    rodeos and country music, effortlessly making them great for people who come in to visit.
+                </p>
+            </div>
+            <!-- a photo of the capital and is just going to be on the center -->
+            <div class="info">
+                <h2>Explore the Heart of Texas ❤️</h2>
+                <!-- image is going to go here -->
+                <img src="assets/austin.jpeg" alt="Austin City" style="width: 40%; height: auto;">
+                <!-- here is going to be on the graph to show the city, dish and landmark -->
+                <p><strong>Capital:</strong> Austin</p>
+                <ol>
+                    <li>Located in the Hill Country</li>
+                    <li>State capital of Texas</li>
+                    <li>Famous for its live music</li>
+                    <li>Known for its tech industry</li>
+                    <li>Popular for its delicious tacos</li>
+                </ol>
+
+            </div>
+            <!-- here is going to to be the unordered list for the state  -->
+            <div class="info">
+                <h2>Tasting Texas: A Culinary Exploration</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Famous Dish</th>
+                            <th>Landmark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>San Antonio</strong></td>
+                            <td>Texas BBQ</td>
+                            <td>The Alamo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Austin</strong></td>
+                            <td>Tacos</td>
+                            <td>Mount Bonnell</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Houston</strong></td>
+                            <td>Trill Burgers</td>
+                            <td>Space Center Houston</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="info">
+                    <h2>Texas: A State of Contrasts and Opportunities</h2>
+                    <!-- adding an unordered list of more information about texas -->
+                    <ul>
+                        <li style="margin-bottom: 10px;">Texas is a state of dynamic contrasts, where the landscape
+                            changes from the beaches of the Gulf Coast to the untamed West Texas deserts, from urban
+                            diversity
+                            to rural simplicity.</li>
+
+                        <li style="margin-bottom: 10px;">The state's economy is just as diverse, driven by industries
+                            ranging from energy and agriculture to technology and aerospace.</li>
+
+                        <li style="margin-bottom: 10px;">This economic powerhouse consistently surpasses national
+                            averages in income levels, offering a wealth of opportunities for its residents.</li>
+
+                        <li style="margin-bottom: 10px;">Whether you're drawn to the fast-paced life of its cities or
+                            the tranquil beauty of its countryside, Texas offers a lifestyle as varied as its
+                            landscapes.
+                        </li>
+
+                        <li style="margin-bottom: 10px;">The state is a distinctive and dynamic location to live, work,
+                            and explore thanks to its rich cultural fabric and strong economy.</li>
+                    </ul>
+
+
+                </div>
+        </section>
+
+        <footer>
+            <!-- adding the all rights reserved on the footer  -->
+            <p>&copy; 2023 Welcome to Texas. All rights reserved.</p>
+            <!-- email on the footer  -->
+            <p>Contact us at <a href="mailto:info@welcometotexas.com">info@welcometotexas.com</a></p>
+        </footer>
+    </main>
+</body>
+
+</html>
